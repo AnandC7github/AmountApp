@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/new1">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Switch
+            android:id="@+id/sw_credit"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:text="Credit or not" />
+
+        <Button
+            android:id="@+id/btn_viewAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View All" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/btn_credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credit"
+            android:onClick="onCreditButtonClick" />
+
+        <Button
+            android:id="@+id/btn_debit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Debit"
+            android:onClick="onDebitButtonClick" />
+
+
+        <ListView
+            android:id="@+id/lv_customerList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
