@@ -1,4 +1,4 @@
-# AmountApp
+# AmountApp (Debit Credit Chronicle) 
 
 AmountApp is a simple Android application designed for managing customer information related to credit or debit transactions. This app allows users to track and manipulate customer data effortlessly.
 
